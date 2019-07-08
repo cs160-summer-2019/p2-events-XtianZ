@@ -41,7 +41,14 @@
 <script type="text/javascript">
 
 	// your solution here
-
+$(document).ready(function(){
+  var addbubble() = function() {
+    $(".shape-container").append($("<div class="p2-circle bg-blue"></div>"));
+  }
+  $(".btn").on('click', ()=>{
+    addbubble();
+  }); 
+  
 </script>
 </body>
 </html>
