@@ -41,13 +41,16 @@
 <script type="text/javascript">
 
 	// your solution here
-$(document).ready(function(){
-  var addbubble() = function() {
-    $(".shape-container").append($("<div class="p2-circle bg-blue"></div>"));
-  }
-  $(".btn").on('click', ()=>{
-    addbubble();
-  }); 
+/*  var addbubble() {
+    $(".shape-container").append($("<div class='p2-circle bg-blue'></div>"));
+  } */
+ $(document).ready(function(){
+   var bubblespawner = setInterval(function() {$(".shape-container").append($("<div class='p2-circle bg-red'></div>"))}, 1000);
+
+   $(".btn").on('click',()=>{
+      clearInterval(bubblespawner);
+    });
+ });
   
 </script>
 </body>
